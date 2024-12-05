@@ -78,20 +78,6 @@ pwm.setPWMFreq(FREQUENCY)
 pwm.setPWM(32, 0, 90)                   #Set Gripper to 90 degrees (Close Gripper)
 GPIO.setup(33, GPIO.IN)                  #Tiene que tener un pin válido de la jetson
 
-
-#Asignamos pines
-int potWrist    = A3
-int potElbow    = A2                    #Assign Potentiometers to pins on Arduino Uno
-int potShoulder = A1
-int potBase     = A0
-
-int hand      = 11
-int wrist     = 12
-int elbow     = 13                      #Assign Motors to pins on Servo Driver Board
-int shoulder  = 14
-int base      = 15
-
-
 def moveMotor(controlIn, motorOut):
      """""
 
